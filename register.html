@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" href="assets/chikawa.png" />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li class="close-button" onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="course.html">Course</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">VisualSkill</a></li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="course.html">Course</a></li>
+        <li class="hideOnMobile"><a href="career.html">Career</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile"><a href="register.html">Register</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="regisform">
+      <form id="form_register">
+        <div class="text">
+          <h1>Create Your Account</h1>
+          <p>Fill in the form below to get started</p>
+        </div>
+        <div class="form-row">
+          <label for="fullname">Name</label>
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            placeholder="Enter your full name"
+          />
+        </div>
+        <div class="form-row">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter your username"
+          />
+        </div>
+        <div class="form-row">
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="dob" id="dob" />
+        </div>
+        <div class="form-row-gender">
+          <label class="title" for="gender">Gender</label>
+          <input type="radio" name="gender" id="gender_male" />
+          <label for="gender_male">Male</label>
+          <input type="radio" name="gender" id="gender_female" />
+          <label for="gender_female">Female</label>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+        </div>
+        <div class="form-row">
+          <label for="confirm">Confirm Password</label>
+          <input
+            type="password"
+            name="confirm"
+            id="confirm"
+            placeholder="Confirm your password"
+          />
+        </div>
+        <div class="terms">
+          <input type="checkbox" id="agree" />
+          <label for="agree">
+            I agree to the Terms of Agreement and Privacy Policy
+          </label>
+        </div>
+        <label id="error"></label>
+        <input type="submit" value="Register" />
+      </form>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="course.html">Course</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <p>&copy; 2026 VisualSkill. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
